@@ -1,7 +1,7 @@
 //Logic Challenge - Makan Terus (Rekursif)
 
 function makanTerusRekursif(waktu) {
-  if (waktu < 15 && waktu > 1) {
+  if (waktu < 15 && waktu >= 1) {
     return 1;
   } else if (waktu === 0) {
     return 0;
