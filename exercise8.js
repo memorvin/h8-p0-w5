@@ -1,7 +1,7 @@
 //Logic Challenge - Hapus Simbol (Regex)
 
-ffunction hapusSimbol(str) {
-  var myRegex = /[a-z0-9 ]/ig;
+function hapusSimbol(str) {
+  var myRegex = /[a-z0-9\s]/ig;
   var tempResult = str.match(myRegex);
   if (tempResult !== null) {
     var result = tempResult.join('');
