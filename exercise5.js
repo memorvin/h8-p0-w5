@@ -1,7 +1,7 @@
 //Logic Challenge - Kali Terus (Rekursif)
 
 function kaliTerusRekursif(angka) {
-
+//Multiply each digit on number input
   function checkAngka(angka) {
     if (String(angka).length === 1) {
       return angka;
@@ -10,7 +10,7 @@ function kaliTerusRekursif(angka) {
     }
     return Number(String(angka)[0]) * checkAngka(Number(String(angka).slice(1)));;
   }
-
+//Check the multiplication result, re-do multiplication if needed
   var result = checkAngka(angka);
   if (String(result).length === 1) {
     return result;
