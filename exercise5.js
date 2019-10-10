@@ -3,16 +3,15 @@
 function kaliTerusRekursif(angka) {
 
   function checkAngka(angka) {
-  if (String(angka).length === 1) {
-    return angka;
-  } else if (String(angka).indexOf(0) != -1) {
-    return 0;
-  }
-  return Number(String(angka)[0]) * checkAngka(Number(String(angka).slice(1)));;
+    if (String(angka).length === 1) {
+      return angka;
+    } else if (String(angka).indexOf(0) != -1) {
+      return 0;
+    }
+    return Number(String(angka)[0]) * checkAngka(Number(String(angka).slice(1)));;
   }
 
   var result = checkAngka(angka);
-
   if (String(result).length === 1) {
     return result;
   }
