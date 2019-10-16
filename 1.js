@@ -36,6 +36,10 @@
  */
 
 function checkRatio(powerbank) {
+  if (powerbank === undefined) {
+    return 'Invalid Input';
+  }
+
   var lebarNum = '';
   lebarSpace = powerbank.lebar.indexOf(' ');
   for (var i = 0; i < lebarSpace; i++) {
